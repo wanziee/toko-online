@@ -568,8 +568,8 @@
                                 <img src="{{ asset('frontend/img/thumb-product01.jpg') }}" alt="">
                             </div>
                             <div class="product-body">
-                                <h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
-                                <h3 class="product-price">$32.50 <del class="product-old-price">$45.00</del></h3>
+                                <h2 class="product-name"><a href="#">Onitsuka Tiger GSM</a></h2>
+                                <h3 class="product-price">RP.2.000.000 <del class="product-old-price">RP.3.000.000</del></h3>
                                 <div class="product-rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -587,8 +587,8 @@
                                 <img src="{{ asset('frontend/img/thumb-product01.jpg') }}" alt="">
                             </div>
                             <div class="product-body">
-                                <h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
-                                <h3 class="product-price">$32.50</h3>
+                                <h2 class="product-name"><a href="#">Onitsuka Tiger GSM</a></h2>
+                                <h3 class="product-price">RP.2.000.000 <del class="product-old-price">RP.3.000.000</del></h3>
                                 <div class="product-rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>

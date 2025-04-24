@@ -7,10 +7,6 @@
 
 Project ini merupakan project Laravel pada mata kuliah Web Programming III di Universitas Bina Sarana Informatika yang bertemakan tentang Toko Online.
 
-## Relasi Tabel
-
-<p align="center"><img src="public/backend/image/screenshot/ss_relasi.jpg" width="600" alt="Laravel Logo"></p>
-
 ## Pra-Install
 
 Sebelumnya pastikan menginstall terlebih dahulu kebutuhan sistem untuk menggunakan project ini.
@@ -20,7 +16,6 @@ Sebelumnya pastikan menginstall terlebih dahulu kebutuhan sistem untuk menggunak
 -   [x] Code Editor <code>VS Code, Sublime Text atau sejenisnya</code>
 -   [x] Web Server <code>Laragon, Xampp atau sejenisnya</code>
 -   [x] Web Browser <code>Chrome, Mozilla atau sejenisnya</code>
--   [x] Node.js <code>(opsional)</code>
 
 ## Cara Install
 
