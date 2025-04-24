@@ -80,6 +80,11 @@ php artisan migrate:fresh --seed
 <td><h3 align="center">Produk</h3><img src="public/backend/image/screenshot/ss_produk.png"></td>
 <td><h3 align="center">Tambah Foto Produk</h3><img src="public/backend/image/screenshot/ss_tambah_gambar_produk.png"></td>
 </tr>
+<tr>
+<td><h3 align="center">(user)Dashboard</h3><img src="public/backend/image/screenshot/ss_user_dashboard.png"></td>
+<td><h3 align="center">(user)Produk Detail</h3><img src="public/backend/image/screenshot/ss_produk_detail.png"></td>
+</tr>
+
 <!-- <tr>
 <td><h3 align="center">Laporan User</h3><img src="public/backend/image/screenshot/ss_laporan_user.png"></td>
 <td><h3 align="center">Laporan Produk</h3><img src="public/backend/image/screenshot/ss_laporan_produk.png"></td>
