@@ -77,7 +77,7 @@ php artisan migrate:fresh --seed
 </tr>
 <tr>
 <td><h3 align="center">(user)Produk Detail</h3><img src="public/backend/image/screenshot/ss_produk_detail.png"></td>
-<td><h3 align="center">(user)login</h3><img src="public/backend/image/screenshot/ss_user_login.png"></td>
+<td><h3 align="center">(user)login using Firebase</h3><img src="public/backend/image/screenshot/ss_user_login.png"></td>
 </tr>
 
 <!-- <tr>
