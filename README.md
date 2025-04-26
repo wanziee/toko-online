@@ -81,11 +81,11 @@ php artisan migrate:fresh --seed
 </tr>
 <tr>
 <td><h3 align="center">(admin)Produk</h3><img src="public/backend/image/screenshot/ss_produk.png"></td>
-<td><h3 align="center">(user)Dashboard</h3><img src="public/backend/image/screenshot/ss_user_dashboard.png"></td>
+<td><h3 align="center">(user)Dashboard/web-pro-3 slide-1</h3><img src="public/backend/image/screenshot/ss_user_dashboard.png"></td>
 </tr>
 <tr>
-<td><h3 align="center">(user)Produk Detail</h3><img src="public/backend/image/screenshot/ss_produk_detail.png"></td>
-<td><h3 align="center">(user)login using Firebase</h3><img src="public/backend/image/screenshot/ss_user_login.png"></td>
+<td><h3 align="center">(user)Produk Detail/web-pro-3 slide-2</h3><img src="public/backend/image/screenshot/ss_produk_detail.png"></td>
+<td><h3 align="center">(user)login using Firebase/web-pro-3 slide-3</h3><img src="public/backend/image/screenshot/ss_user_login.png"></td>
 </tr>
 
 <!-- <tr>
