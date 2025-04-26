@@ -42,6 +42,14 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
+4. Tambahkan kredensial Google API di file .env:
+
+```
+GOOGLE_CLIENT_ID=your_google_client_id_here
+GOOGLE_CLIENT_SECRET=your_google_client_secret_here
+GOOGLE_REDIRECT_URL=http://127.0.0.1:8000/auth/google/callback
+```
+
 4. Generate key aplikasi pada env melalui terminal.
 
 ```
