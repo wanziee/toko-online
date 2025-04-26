@@ -64,20 +64,23 @@ php artisan migrate:fresh --seed
 
 <table width="100%">
 <tr>
-<td><h3 align="center">Login</h3><img src="public/backend/image/screenshot/ss_login.png"></td>
-<td><h3 align="center">Home</h3><img src="public/backend/image/screenshot/ss_home.png"></td>
+<td><h3 align="center">(admin)Login</h3><img src="public/backend/image/screenshot/ss_login.png"></td>
+<td><h3 align="center">(admin)Home</h3><img src="public/backend/image/screenshot/ss_home.png"></td>
 </tr>
 <tr>
-<td><h3 align="center">User</h3><img src="public/backend/image/screenshot/ss_user.png"></td>
-<td><h3 align="center">Kategori</h3><img src="public/backend/image/screenshot/ss_kategori.png"></td>
+<td><h3 align="center">(admin)User</h3><img src="public/backend/image/screenshot/ss_user.png"></td>
+<td><h3 align="center">(admin)Kategori</h3><img src="public/backend/image/screenshot/ss_kategori.png"></td>
 </tr>
 <tr>
-<td><h3 align="center">Produk</h3><img src="public/backend/image/screenshot/ss_produk.png"></td>
-<td><h3 align="center">Tambah Foto Produk</h3><img src="public/backend/image/screenshot/ss_tambah_gambar_produk.png"></td>
+<td><h3 align="center">(admin)Produk</h3><img src="public/backend/image/screenshot/ss_produk.png"></td>
+<td><h3 align="center">(admin)Tambah Foto Produk</h3><img src="public/backend/image/screenshot/ss_tambah_gambar_produk.png"></td>
 </tr>
 <tr>
 <td><h3 align="center">(user)Dashboard</h3><img src="public/backend/image/screenshot/ss_user_dashboard.png"></td>
 <td><h3 align="center">(user)Produk Detail</h3><img src="public/backend/image/screenshot/ss_produk_detail.png"></td>
+</tr>
+<tr>
+<td><h3 align="center">(user)login</h3><img src="public/backend/image/screenshot/ss_user_login.png"></td>
 </tr>
 
 <!-- <tr>
