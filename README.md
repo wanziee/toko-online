@@ -1,23 +1,23 @@
-## Toko Online
+## 🛒 Toko Online
 
 <p align="center"><img src="public/backend/image/logo_ubsi.png" width="200" alt="Logo UBSI"></p>
 <p align="center"><img src="public/backend/image/logo_text2.png" width="300" alt="Text Logo Project"></p>
 
-## Pengenalan Project
+## 📌 Pengenalan
 
 Project ini merupakan project Laravel pada mata kuliah Web Programming III di Universitas Bina Sarana Informatika yang bertemakan tentang Toko Online.
 
-## Pra-Install
+## ✅ Kebutuhan Sistem
 
 Sebelumnya pastikan menginstall terlebih dahulu kebutuhan sistem untuk menggunakan project ini.
 
--   [x] Git
--   [x] Composer
--   [x] Code Editor <code>VS Code, Sublime Text atau sejenisnya</code>
--   [x] Web Server <code>Laragon, Xampp atau sejenisnya</code>
--   [x] Web Browser <code>Chrome, Mozilla atau sejenisnya</code>
+-   Git
+-   Composer
+-   Code Editor _(VS Code, Sublime, dll)_
+-   Web Server _(Laragon, XAMPP, dll)_
+-   Web Browser _(Chrome, Firefox, dll)_
 
-## Cara Install
+## ⚙️ Instalasi Project
 
 1. Cloning repository ini melalui terminal. Tunggu hingga selesai cloning.
 
@@ -60,7 +60,7 @@ php artisan storage:link
 php artisan migrate:fresh --seed
 ```
 
-## Screenshot
+## 🖼️ Screenshot
 
 <table width="100%">
 <tr>
@@ -86,7 +86,7 @@ php artisan migrate:fresh --seed
 </tr> -->
 </table>
 
-## Lisensi
+## 📄 Lisensi
 
 Project ini mengacu pada modul praktik dari mata kuliah Web Programming III Universitas Bina Sarana Informatika (UBSI). Project ini bersifat open-source untuk edukasi.
 
