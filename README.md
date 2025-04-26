@@ -50,19 +50,19 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret_here
 GOOGLE_REDIRECT_URL=http://127.0.0.1:8000/auth/google/callback
 ```
 
-4. Generate key aplikasi pada env melalui terminal.
+5. Generate key aplikasi pada env melalui terminal.
 
 ```
 php artisan key:generate
 ```
 
-5. Generate Storage Link melalui terminal agar dapat mengakses storage.
+6. Generate Storage Link melalui terminal agar dapat mengakses storage.
 
 ```
 php artisan storage:link
 ```
 
-6. Migrasikan tabel beserta seeder melalui terminal.
+7. Migrasikan tabel beserta seeder melalui terminal.
 
 ```
 php artisan migrate:fresh --seed
