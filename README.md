@@ -1,8 +1,3 @@
-## 🛒 Toko Online
-
-<p align="center"><img src="public/backend/image/logo_ubsi.png" width="200" alt="Logo UBSI"></p>
-<p align="center"><img src="public/backend/image/logo_text2.png" width="300" alt="Text Logo Project"></p>
-
 ## 📌 Pengenalan
 
 Project ini merupakan project Laravel pada mata kuliah Web Programming III di Universitas Bina Sarana Informatika yang bertemakan tentang Toko Online.
@@ -94,7 +89,7 @@ php artisan migrate:fresh --seed
 </tr> -->
 </table>
 
-## 📄 Lisensi
+## 📄 License
 
 Project ini mengacu pada modul praktik dari mata kuliah Web Programming II-III Universitas Bina Sarana Informatika (UBSI). Project ini bersifat open-source untuk edukasi.
 
