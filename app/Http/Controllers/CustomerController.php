@@ -9,9 +9,20 @@ use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use App\Helpers\ImageHelper;
 
 class CustomerController extends Controller
 {
+
+    public function index()
+    {
+        $customer = Customer::orderBy('id', 'desc')->get();
+        return view('backend.v_customer.index', [
+            'judul' => 'Customer',
+            'sub' => 'Halaman Customer',
+            'index' => $customer
+        ]);
+    }
     // Redirect ke Google
     public function redirect()
     {
@@ -93,5 +104,73 @@ class CustomerController extends Controller
         Log::info('User berhasil logout');
 
         return redirect('/')->with('success', 'Anda telah berhasil logout.');
+    }
+
+    public function akun($id)
+    {
+        $loggedInCustomerId = Auth::user()->id;
+        if ($id != $loggedInCustomerId) {
+            return redirect()->route('customer.akun', ['id' => $loggedInCustomerId])
+                ->with('msgError', 'Anda tidak berhak mengakses akun ini.');
+        }
+
+        $customer = Customer::where('user_id', $id)->firstOrFail();
+        return view('v_customer.edit', [
+            'judul' => 'Customer',
+            'subJudul' => 'Akun Customer',
+            'edit' => $customer
+        ]);
+    }
+
+    public function updateAkun(Request $request, $id)
+    {
+        $customer = Customer::where('user_id', $id)->firstOrFail();
+        $rules = [
+            'nama' => 'required|max:255',
+            'hp' => 'required|min:10|max:13',
+            'foto' => 'image|mimes:jpeg,jpg,png,gif|file|max:1024',
+        ];
+        $messages = [
+            'foto.image' => 'Format gambar gunakan file dengan ekstensi jpeg, jpg, png, atau gif.',
+            'foto.max' => 'Ukuran file gambar Maksimal adalah 1024 KB.'
+        ];
+
+        if ($request->email != $customer->user->email) {
+            $rules['email'] = 'required|max:255|email|unique:customer';
+        }
+        if ($request->alamat != $customer->alamat) {
+            $rules['alamat'] = 'required';
+        }
+        if ($request->pos != $customer->pos) {
+            $rules['pos'] = 'required';
+        }
+
+        $validatedData = $request->validate($rules, $messages);
+
+        if ($request->file('foto')) {
+            if ($customer->user->foto) {
+                $oldImagePath = public_path('storage/img-customer/') . $customer->user->foto;
+                if (file_exists($oldImagePath)) {
+                    unlink($oldImagePath);
+                }
+            }
+
+            $file = $request->file('foto');
+            $extension = $file->getClientOriginalExtension();
+            $originalFileName = date('YmdHis') . '_' . uniqid() . '.' . $extension;
+            $directory = 'storage/img-customer/';
+            ImageHelper::uploadAndResize($file, $directory, $originalFileName, 385, 400);
+
+            $validatedData['foto'] = $originalFileName;
+        }
+
+        $customer->user->update($validatedData);
+
+        $customer->update([
+            'alamat' => $request->input('alamat'),
+            'pos' => $request->input('pos'),
+        ]);
+
+        return redirect()->route('customer.akun', $id)->with('success', 'Data berhasil diperbarui');
     }
 }

@@ -43,4 +43,15 @@ Route::post('backend/laporan/cetakproduk', [ProdukController::class, 'cetakProdu
 Route::get('/auth/redirect', [CustomerController::class, 'redirect'])->name('auth.redirect');
 Route::get('/auth/google/callback', [CustomerController::class, 'callback'])->name('auth.callback');
 // Logout
-Route::post('/logout', [CustomerController::class, 'logout'])->name('logout');
+Route::post('/logout', [CustomerController::class, 'logout'])->name('customer.logout');
+
+
+// Route untuk Customer
+Route::resource('backend/customer', CustomerController::class, ['as' => 'backend'])->middleware('auth');
+
+// Route untuk menampilkan halaman akun customer
+
+Route::middleware('is.customer')->group(function () {
+    Route::get('/customer/akun/{id}', [CustomerController::class, 'akun'])->name('customer.akun');
+    Route::put('/customer/updateakun/{id}', [CustomerController::class, 'updateAkun'])->name('customer.updateakun');
+});
